@@ -11,16 +11,16 @@
      ═══════════════════════════════════════════════════════════════ -->
 <script>
   const FIREBASE_CONFIG = {
-    apiKey:            "여기에-API-키를-입력하세요",
-    authDomain:        "프로젝트ID.firebaseapp.com",
-    databaseURL:       "https://프로젝트ID-default-rtdb.firebaseio.com",
-    projectId:         "프로젝트ID",
-    storageBucket:     "프로젝트ID.appspot.com",
-    messagingSenderId: "숫자ID",
-    appId:             "1:숫자:web:문자열"
+apiKey: "AIzaSyDFn7iAjJ2YHevFczC6xgyHa1Wnx-wHbus",
+  authDomain: "opoh-lab-reagent.firebaseapp.com",
+  databaseURL: "https://opoh-lab-reagent-default-rtdb.firebaseio.com",
+  projectId: "opoh-lab-reagent",
+  storageBucket: "opoh-lab-reagent.firebasestorage.app",
+  messagingSenderId: "630976017958",
+  appId: "1:630976017958:web:a1d21512e2977d759b18e7",
   };
-  const TEACHER_NAME  = "김용조";         // 기록에 기본으로 들어갈 교사명
-  const SCHOOL_NAME   = "광남고등학교";   // 헤더 표시
+  const TEACHER_NAME  = "성주영";         // 기록에 기본으로 들어갈 교사명
+  const SCHOOL_NAME   = "오포고등학교";   // 헤더 표시
 </script>
 <!-- ═══════════════════════════════════════════════════════════════ -->
 
@@ -746,7 +746,7 @@ tbody tr:hover td{background:#F7FBFF}
               </div>
               <div class="fg"><label>사용자 *</label><input id="l-user" placeholder="교사명"></div>
               <div class="fg"><label>실험명 *</label><input id="l-exp" placeholder="예: 산-염기 중화 적정"></div>
-              <div class="fg"><label>학급 / 대상</label><input id="l-class" placeholder="예: 2학년 3반"></div>
+              <div class="fg"><label>학급 / 대상</label><input id="l-class" placeholder="예: 1학년 1반"></div>
               <div class="fg">
                 <label>폐액 처리</label>
                 <select id="l-waste">
@@ -1041,7 +1041,7 @@ function loadDemo() {
   const m = (n) => { const d=new Date(now); d.setMonth(d.getMonth()-n); return d.toISOString().slice(0,10); };
   logs = {
     l1:{reagentId:'d1',reagentName:'염산 (HCl)',        date:m(0), used:'30mL', user:'김용조',exp:'산-염기 중화 적정',  class:'2-3',waste:'중화 후 폐기'},
-    l2:{reagentId:'d3',reagentName:'페놀프탈레인',       date:m(0), used:'2mL',  user:'김용조',exp:'산-염기 중화 적정',  class:'2-3',waste:'폐액통 수거'},
+    l2:{reagentId:'d3',reagentName:'페놀프탈레인',       date:m(0), used:'2mL',  user:'',exp:'산-염기 중화 적정',  class:'2-3',waste:'폐액통 수거'},
     l3:{reagentId:'d6',reagentName:'과산화수소 (H₂O₂)', date:m(0), used:'50mL', user:'김동현',exp:'산소 발생 실험',      class:'1-1',waste:'폐액통 수거',note:'거품 다량'},
     l4:{reagentId:'d4',reagentName:'에탄올',             date:m(1), used:'200mL',user:'김용조',exp:'크로마토그래피',     class:'1-2',waste:'폐액통 수거'},
     l5:{reagentId:'d2',reagentName:'수산화나트륨 (NaOH)',date:m(1), used:'20g',  user:'김용조',exp:'비누 제조 실험',      class:'2-1',waste:'중화 후 폐기'},
